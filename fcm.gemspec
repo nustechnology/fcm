@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name = "fcm"
-  s.version = "1.0.8"
+  s.version = "1.0.9"
   s.platform = Gem::Platform::RUBY
   s.authors = ["Kashif Rasul", "Shoaib Burq"]
   s.email = ["kashif@decision-labs.com", "shoaib@decision-labs.com"]
@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.executables = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency("faraday", ">= 1.0.0", "< 3.0")
+  s.add_runtime_dependency("faraday", ">= 0.17.6", "< 3.0")
   s.add_runtime_dependency("googleauth", "~> 1")
 end
